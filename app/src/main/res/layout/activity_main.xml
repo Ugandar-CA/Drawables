@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bitmap"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bitmap"/>
+
+        <TextView
+            android:id="@+id/bitMapText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BitMap"
+            android:textSize="20sp"
+            android:layout_below="@+id/bitmap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/ninePatch"
+            android:layout_below="@+id/bitMapText"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bubble"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nine Patch"
+            android:textSize="20sp"
+            android:layout_below="@+id/ninePatch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/layerList"
+            android:layout_below="@+id/ninePatch"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/layerlist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/layerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layer List"
+            android:textSize="20sp"
+            android:layout_below="@+id/layerList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/stateList"
+            android:layout_below="@+id/layerText"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/statelist"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State List"
+            android:textSize="20sp"
+            android:layout_below="@+id/stateList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/levelList"
+            android:layout_below="@+id/stateList"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/level_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/levelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level List"
+            android:textSize="20sp"
+            android:layout_below="@+id/levelList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/transitionDraw"
+            android:layout_below="@+id/levelList"
+            android:src="@drawable/transitiondraw"
+            android:onClick="press"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/transitionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transition Drawable"
+            android:textSize="20sp"
+            android:layout_below="@+id/transitionDraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/insertDraw"
+            android:layout_below="@+id/transitionText"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/insetdraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/insertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Drawable"
+            android:textSize="20sp"
+            android:layout_below="@+id/insertDraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/clipDraw"
+            android:layout_below="@+id/insertText"
+            android:onClick="clipDraw"
+            android:src="@drawable/clipxml"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/clipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clip Drawable"
+            android:textSize="20sp"
+            android:layout_below="@+id/clipDraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+        <ImageButton
+            android:id="@+id/shapeDraw"
+            android:layout_below="@+id/clipText"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/shapedraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/shapeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shape Drawable"
+            android:textSize="20sp"
+            android:layout_below="@+id/shapeDraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
